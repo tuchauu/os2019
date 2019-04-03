@@ -1,0 +1,53 @@
+lambsauce@lambsauce-VGN-SZ780N:~$ echo hello world
+hello world
+lambsauce@lambsauce-VGN-SZ780N:~$ passwd
+Changing password for lambsauce.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+lambsauce@lambsauce-VGN-SZ780N:~$ date
+Wed Apr  3 10:08:56 WIB 2019
+lambsauce@lambsauce-VGN-SZ780N:~$ hostname
+lambsauce-VGN-SZ780N
+lambsauce@lambsauce-VGN-SZ780N:~$ arch
+i686
+lambsauce@lambsauce-VGN-SZ780N:~$ uname -a
+Linux lambsauce-VGN-SZ780N 4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:15:38 UTC 2018 i686 i686 i686 GNU/Linux
+lambsauce@lambsauce-VGN-SZ780N:~$ dmesg
+[    0.000000] Linux version 4.15.0-20-generic (buildd@lgw01-amd64-033) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21-Ubuntu SMP Tue Apr 24 06:15:38 UTC 2018 (Ubuntu 4.15.0-20.21-generic 4.15.17)
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   NSC Geode by NSC
+[    0.000000]   Cyrix CyrixInstead
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   Transmeta GenuineTMx86
+[    0.000000]   Transmeta TransmetaCPU
+[    0.000000]   UMC UMC UMC UMC
+lambsauce@lambsauce-VGN-SZ780N:~$ uptime
+ 10:09:58 up  1:32,  1 user,  load average: 0,67, 0,56, 0,50
+lambsauce@lambsauce-VGN-SZ780N:~$ who am i
+lambsauce@lambsauce-VGN-SZ780N:~$ whoami
+lambsauce
+lambsauce@lambsauce-VGN-SZ780N:~$ who
+lambsauce tty7         2019-04-03 08:38 (:0)
+lambsauce@lambsauce-VGN-SZ780N:~$ id
+uid=1000(lambsauce) gid=1000(lambsauce) groups=1000(lambsauce),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),127(sambashare)
+lambsauce@lambsauce-VGN-SZ780N:~$ last
+lambsauc tty7         :0               Wed Apr  3 08:38    gone - no logout
+reboot   system boot  4.15.0-20-generi Wed Apr  3 15:37   still running
+reboot   system boot  4.15.0-20-generi Wed Apr  3 03:12 - 03:13  (00:00)
+
+wtmp begins Tue Apr  2 17:34:50 2019
+lambsauce@lambsauce-VGN-SZ780N:~$ finger
+
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+lambsauce@lambsauce-VGN-SZ780N:~$ w
+ 10:10:26 up  1:33,  1 user,  load average: 0,51, 0,53, 0,49
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+lambsauc tty7     :0               08:38     ?     1:55   0.35s cinnamon-sessio
+
