@@ -1,0 +1,30 @@
+anhtu@ubuntu:~$ ls -la |grep list
+anhtu@ubuntu:~$ wc -l /ect/passwd
+wc: /ect/passwd: No such file or directory
+anhtu@ubuntu:~$ wc -l /etc/passwd
+44 /etc/passwd
+anhtu@ubuntu:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        2017104     1097824       78840       23108      840440      719420
+Swap:        969960       35220      934740
+anhtu@ubuntu:~$ cat /proc/cpuinfo | frep processor | wc -l
+
+Command 'frep' not found, did you mean:
+
+  command 'gfrep' from deb gfarm-client
+  command 'mrep' from deb mblaze
+  command 'grep' from deb grep
+  command 'prep' from deb loki
+  command 'rep' from deb rep
+  command 'free' from deb procps
+  command 'fgrep' from deb grep
+  command 'rrep' from deb rrep
+
+Try: sudo apt install <deb name>
+
+0
+anhtu@ubuntu:~$ cat /proc/cpuinfo | grep processor | wc -l
+1
+anhtu@ubuntu:~$ find -name "*.jpg" | wc -l
+0
+
