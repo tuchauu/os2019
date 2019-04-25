@@ -1,0 +1,23 @@
+anhtu@ubuntu:~$ ps man
+   PID TTY      STAT   TIME COMMAND
+  1280 tty2     -      0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_S
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:00 -
+     - -        Ssl+   0:00 -
+  1282 tty2     -      0:20 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/
+     - -        Sl+    0:17 -
+     - -        Sl+    0:02 -
+  1295 tty2     -      0:00 /usr/lib/gnome-session/gnome-session-binary --sessio
+     - -        Sl+    0:00 -
+     - -        Sl+    0:00 -
+anhtu@ubuntu:~$ ps man | grep gnome-calculator
+  5337 pts/1    -      0:02 gnome-calculator
+  5563 pts/0    -      0:00 grep --color=auto gnome-calculator
+anhtu@ubuntu:~$ cat /proc/5337/status
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+anhtu@ubuntu:~$ kill -s STOP 5337
+anhtu@ubuntu:~$ kill -s CONT 5337
+anhtu@ubuntu:~$ kill -s KILL 5337
+
