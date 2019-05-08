@@ -1,0 +1,12 @@
+anhtu@ubuntu:~$ ps aux | grep -i firefox
+anhtu     23463 38.3 14.1 1611028 286124 tty2   Rl+  19:33   0:09 /usr/lib/firefox/firefox -new-window
+anhtu     23537 15.6  6.5 1392720 131172 tty2   Sl+  19:33   0:02 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 173747 -parentBuildID 20190410105222 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 23463 true tab
+anhtu     23597 14.7  5.3 1372952 108180 tty2   Sl+  19:33   0:01 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 6309 -prefMapSize 173747 -parentBuildID 20190410105222 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 23463 true tab
+anhtu     23641  9.0  1.8 292660 38308 tty2     Rl+  19:33   0:00 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 6503 -prefMapSize 173747 -parentBuildID 20190410105222 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 23463 true tab
+anhtu     23642  0.0  7.1 1580316 143324 tty2   S+   19:33   0:00 /usr/lib/firefox/firefox -new-window
+anhtu     23649  0.0  0.0  17480   900 pts/0    S+   19:33   0:00 grep --color=auto -i firefox
+
+anhtu@ubuntu:~$ ps -o nlwp 23463
+NLWP
+  54
+
